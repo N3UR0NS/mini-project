@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+    
+{% block title %}
+Mini Project
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+  <h4 id="topic" class="shadow jumbotron">BST with memoization to calculate maximum covid beds available in hospitals within range of distance</h4>
+  <div id="map" class="map"></div>
+  <div id="work" class="container">
+    <div id="location" class="jumbotron shadow-lg">
+      <label for="coordinates">Choose location in Map</label>
+      <div id="coordinates">
+        Longitude: <span id="longitude">null</span>
+        <br>
+        Latitude: <span id="latitude">null</span>
+      </div>
+    </div>
+
+    <div id="enter_range" class="jumbotron shadow-lg">
+      <label for="range">Range</label>
+      <input type="range" class="custom-range" id="range" min="1" max="320" value="18">
+      <div id="selected_range">
+        Range: <span id="my_range"></span>
+      </div>
+    </div>
+
+    <div id="btn_submit" class="container shadow-lg">
+        <input type="hidden" id="longitude1" name="longitude">
+        <input type="hidden" id="latitude1" name="latitude">
+        <input type="hidden" id="range1" name="range">
+        <button id="submit" class="btn btn-primary"> Find hospital </button>
+    </div>
+    <div id="output" class="jumbotron shadow-lg">
+      <label for="result">Result</label>
+      <div id="result"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Main JS -->
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+{% endblock %}

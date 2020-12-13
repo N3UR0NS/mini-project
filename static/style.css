@@ -1,0 +1,144 @@
+body {
+    background-color: #282828;
+    margin: 0;
+    padding: 4px 6px;
+}
+
+#topic {
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 2px 0 0;
+    padding: 2px 4px;
+    background-color: #484848;
+}
+
+.map {
+    height: 600px;
+    width: 70%;
+    margin: 6px 0;
+    -webkit-border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    border-radius:0.3em;
+    overflow:auto;
+    float: left;
+}
+
+#work {
+    text-align: center;
+    height: 600px;
+    width: 30%;
+    margin: 4px 0;
+    padding: 2px 4px;
+    float: right;
+    /* overflow: hidden; */
+}
+
+#location {
+    margin: 0 0 4px 4px;
+    padding: 5px;
+}
+
+#enter_range {
+    margin: 0 0 4px 4px;
+    padding: 5px 12px 0 8px;
+}
+
+#output {
+    height: 61%;
+    margin: 4px 0 8px 4px;
+    padding: 4px 8px 0 8px;
+}
+
+/* Slider CSS */
+input[type='range'] {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+  
+input[type='range']::-webkit-slider-runnable-track {
+    background-color: #b9b9b9;
+}
+input[type='range']::-webkit-slider-track-progress {
+    background-color: #606161; 
+}
+input[type='range']::-webkit-slider-thumb {
+    background-color: #606161; 
+}
+input[type="range"]::-webkit-slider-thumb:active {
+    background-color: #3b3b3b; 
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #606161; 
+}
+input[type="range"]::-moz-range-thumb {
+    background-color: #606161; 
+}
+input[type="range"]::-moz-range-thumb:active {
+    background-color: #3b3b3b; 
+}
+input[type="range"]::-moz-range-track {  
+    background-color: #b9b9b9;
+}
+
+#selected_range {
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 4px;
+    text-align: left;
+}
+
+#result {
+    margin-left: 8px;
+    padding: 4px;
+    text-align: left;
+}
+
+#my_range {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+
+#cur_location {
+    background-color: transparent;
+    margin: 0;
+    padding: 8px;
+}
+
+#coordinates {
+    font-weight: bold;
+    margin-left: 16px;
+    text-align: left;
+}
+
+#longitude, #latitude {
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#btn_submit {
+    padding-left: 4px;
+    padding-right: 0;
+}
+
+#submit {
+    height: 35px;
+    width: 100%;
+    background-color: #606161;
+    border-color: #606161;
+    color: whitesmoke;
+    border-radius: 0.3em;
+    box-shadow: None;
+}
+
+/* #submit:hover {
+    box-shadow: #b9b9b9;
+    background-color: #505050;
+    border-color: #505050;
+} */
+
+#submit:active {
+    background-color: #585858;
+    border-color: #585858;
+    color: whitesmoke;
+}
