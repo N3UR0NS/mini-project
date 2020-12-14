@@ -68,7 +68,6 @@ def handle_data():
         return jsonify(res)
 
 def memoized_bst(data):
-    print(data)
     max = 0
     h = data[0]
     for item in data:
@@ -76,8 +75,7 @@ def memoized_bst(data):
         if beds > max:
             max = beds
             h = item
-    print(h['beds'])
     return h
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
