@@ -17,6 +17,7 @@ def handle_data():
         longitude = request.form.get('longitude')
         latitude = request.form.get('latitude')
         radius = request.form.get('range')
+        radius = int(float(radius)*0.62137)
 
         base64_email_bytes = config.email.encode('ascii')
         email_bytes = base64.b64decode(base64_email_bytes)
